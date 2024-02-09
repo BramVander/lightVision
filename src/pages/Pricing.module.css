@@ -1,0 +1,5 @@
+.pricingTitle,
+.pricingText {
+  display: flex;
+  justify-content: center;
+}

@@ -49,15 +49,12 @@ section.form {
   padding: 2rem 1rem;
 
   form {
+    background-color: white;
     display: flex;
     flex-direction: column;
-    label {
-      margin: 1rem;
-    }
-
-    input,
-    textarea {
-      padding: 1rem;
-    }
+    border-radius: 20px;
+    border-bottom: 5px solid #00c56a;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0), 0 17px 17px 0 rgba(0, 0, 0);
+    transform: scale(0.9);
   }
 }

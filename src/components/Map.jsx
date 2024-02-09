@@ -7,12 +7,12 @@ const mapPosition = [51.5017145191548, 5.493854839498243];
 function Map() {
   return (
     <>
-      <h1>Find Us</h1>
+      <h1 className={styles.mapTitle}>Find Us</h1>
 
       <div className={styles.mapContainer}>
         <MapContainer
           center={mapPosition}
-          zoom={15}
+          zoom={16}
           scrollWheelZoom={true}
           className={styles.map}
         >

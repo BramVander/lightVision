@@ -8,7 +8,8 @@ import styles from "./Form.module.css";
 function Form() {
   const [message, setMessage] = useState("");
 
-  function handleSubmit() {
+  function handleSubmit(e) {
+    e.preventDefault();
     setMessage("Quote requested!");
   }
 
@@ -17,41 +18,46 @@ function Form() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <h2>I still have questions</h2>
+        <div className={styles.title}>I still have questions</div>
 
         <div className={styles.row}>
           <label htmlFor="name">
             Name
-            <input id="name" />
+            <input required id="name" />
           </label>
 
           <label htmlFor="company">
             Company
-            <input id="company" />
+            <input required id="company" />
           </label>
         </div>
 
         <div className={styles.row}>
           <label htmlFor="phone">
             Phone
-            <input id="phone" />
+            <input required id="phone" />
           </label>
 
           <label htmlFor="email">
             Email
-            <input id="email" />
+            <input required id="email" />
           </label>
         </div>
 
         <div className={styles.row}>
           <label className={styles.question} htmlFor="question">
             Question
-            <textarea id="question" placeholder="Ask us anything!" />
+            <textarea required id="question" placeholder="Ask us anything!" />
           </label>
         </div>
 
         <div className={styles.submit}>
-          <Button text={"request quotation"} />
+          <Button
+            text={"request quotation"}
+            color={"white"}
+            borderBottomLeftRadius={"0"}
+            borderBottomRightRadius={"0"}
+          />
         </div>
       </form>
     </>

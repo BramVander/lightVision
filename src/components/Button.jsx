@@ -1,4 +1,10 @@
-function Button({ text = "btnText", bg = "#00c56a", color = "#242424" }) {
+function Button({
+  text = "btnText",
+  bg = "#00c56a",
+  color = "#242424",
+  borderBottomLeftRadius = "5px",
+  borderBottomRightRadius = "5px",
+}) {
   return (
     <button
       style={{
@@ -7,6 +13,8 @@ function Button({ text = "btnText", bg = "#00c56a", color = "#242424" }) {
         padding: "10px",
         border: bg,
         borderRadius: "5px",
+        borderBottomLeftRadius: borderBottomLeftRadius,
+        borderBottomRightRadius: borderBottomRightRadius,
         textTransform: "uppercase",
         cursor: "pointer",
       }}

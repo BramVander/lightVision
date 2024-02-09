@@ -1,11 +1,11 @@
-h1 {
+.mapTitle {
   display: flex;
   justify-content: center;
 }
 
 .mapContainer {
   flex: 1;
-  height: 20vw;
+  height: 33vw;
   background-color: var(--color-dark--2);
   position: relative;
 }

@@ -8,9 +8,9 @@ export default function Pricing() {
       <Nav />
       <main>
         <section>
-          <h1>Just $11/month, subscribe now</h1>
+          <h1 className={styles.pricingTitle}>Just $11/month, subscribe now</h1>
 
-          <p>
+          <p className={styles.pricingText}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae vel
             labore mollitia iusto. Recusandae quos provident, laboriosam fugit
             voluptatem iste.

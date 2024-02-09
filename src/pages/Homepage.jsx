@@ -1,9 +1,9 @@
-import styles from "./Homepage.module.css";
-
 import Nav from "../components/Nav";
 import Button from "../components/Button";
 import UniquePoints from "../components/UniquePoints";
 import Form from "../components/Form";
+
+import styles from "./Homepage.module.css";
 
 export default function Homepage() {
   return (
