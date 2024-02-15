@@ -4,9 +4,11 @@ function Button({
   color = "#242424",
   borderBottomLeftRadius = "5px",
   borderBottomRightRadius = "5px",
+  onClick
 }) {
   return (
     <button
+      onClick={onClick}
       style={{
         color: color,
         backgroundColor: bg,

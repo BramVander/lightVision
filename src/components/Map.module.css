@@ -49,10 +49,17 @@
 }
 
 :global(.leaflet-popup .leaflet-popup-content) {
-  font-size: 1.5rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
   gap: 1rem;
+  
+  a {
+    color: #ffb643;
+  }
+  a:hover {
+    color: rgb(0, 197, 106);
+  }
 }
 
 :global(.leaflet-popup .leaflet-popup-content span:first-child) {

@@ -1,9 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+
 import Button from "./Button";
 
 import styles from "./Nav.module.css";
 
 function Nav() {
+  const navigate = useNavigate();
+
   return (
     <nav className={styles.nav}>
       <a href="/">
@@ -25,7 +28,12 @@ function Nav() {
         <li>
           <NavLink to="/contact">Contact</NavLink>
         </li>
-        <Button text={"book"} />
+        <Button
+        text={"book"}
+        onClick={(e) => {
+          e.preventDefault();
+          navigate("/pricing");
+        }} />
       </ul>
     </nav>
   );

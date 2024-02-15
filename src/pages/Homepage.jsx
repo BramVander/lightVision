@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import Nav from "../components/Nav";
 import Button from "../components/Button";
 import UniquePoints from "../components/UniquePoints";
@@ -6,6 +8,8 @@ import Form from "../components/Form";
 import styles from "./Homepage.module.css";
 
 export default function Homepage() {
+  const navigate = useNavigate();
+
   return (
     <>
       <main className={styles.header}>
@@ -13,7 +17,12 @@ export default function Homepage() {
         <section className={styles.hero}>
           <h1>Light Measurement Made Easy</h1>
           <p>Order professional lighting measurement</p>
-          <Button text={"book now"} />
+          <Button
+          text={"book now"} 
+          onClick={(e) => {
+            e.preventDefault();
+            navigate("/pricing");
+          }} />
         </section>
       </main>
 

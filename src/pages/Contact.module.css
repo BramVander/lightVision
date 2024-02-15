@@ -1,0 +1,45 @@
+section.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  .text {
+    width: 20%;
+  }
+
+  .formcontainer {
+    width: 20%;
+  }
+
+  .demo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .title {
+      display: flex;
+    }
+
+    label {
+      color: white;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    .datepicker {
+      width: inherit;
+    }
+
+    textarea {
+      width: 100%;
+      margin-block-end: 1rem;
+    }
+  }
+}
+
+section.map {
+  margin-block: 10rem;
+}
