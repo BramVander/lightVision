@@ -8,8 +8,13 @@ import "react-datepicker/dist/react-datepicker.css";
 import styles from "../pages/Contact.module.css";
 
 function ContactForm() {
-  const [date, setDate] = useState(new Date());
+  const tomorrow = new Date().setDate(new Date().getDate() + 1);
+  const [date, setDate] = useState(tomorrow);
   const [message, setMessage] = useState("");
+
+  const nextYear = new Date(
+    new Date().setFullYear(new Date().getFullYear() + 1)
+  );
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -35,6 +40,9 @@ function ContactForm() {
           selected={date}
           onChange={(date) => setDate(date)}
           dateFormat={"dd/MM/yyyy"}
+          showMonthYearDropdown
+          minDate={tomorrow}
+          maxDate={nextYear}
         />
 
         <label htmlFor="notes">Notes</label>
