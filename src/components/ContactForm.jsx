@@ -9,12 +9,12 @@ import styles from "../pages/Contact.module.css";
 
 function ContactForm() {
   const tomorrow = new Date().setDate(new Date().getDate() + 1);
-  const [date, setDate] = useState(tomorrow);
-  const [message, setMessage] = useState("");
-
   const nextYear = new Date(
     new Date().setFullYear(new Date().getFullYear() + 1)
   );
+
+  const [date, setDate] = useState(tomorrow);
+  const [message, setMessage] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -26,7 +26,7 @@ function ContactForm() {
   return (
     <>
       <form className={styles.demo} onSubmit={handleSubmit}>
-        <h2 className={styles.title}>I'd like to book a demo</h2>
+        <h2 className={styles.title}>I&apos;d like to book a demo</h2>
 
         <label htmlFor="name">Name</label>
         <input required id="name" placeholder="Bram Vander" />
@@ -40,6 +40,7 @@ function ContactForm() {
           selected={date}
           onChange={(date) => setDate(date)}
           dateFormat={"dd/MM/yyyy"}
+          dateFormatCalendar={"MMM/yyyy"}
           showMonthYearDropdown
           minDate={tomorrow}
           maxDate={nextYear}

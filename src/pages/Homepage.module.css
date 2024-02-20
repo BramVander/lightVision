@@ -40,6 +40,11 @@ section.product {
     rgb(36, 36, 36) 50%,
     #414141 70%
   );
+
+  .labrail {
+    max-height: 250px;
+    opacity: 0.8;
+  }
 }
 
 section.form {

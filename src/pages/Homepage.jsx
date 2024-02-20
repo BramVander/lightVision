@@ -18,11 +18,12 @@ export default function Homepage() {
           <h1>Light Measurement Made Easy</h1>
           <p>Order professional lighting measurement</p>
           <Button
-          text={"book now"} 
-          onClick={(e) => {
-            e.preventDefault();
-            navigate("/pricing");
-          }} />
+            text={"book now"}
+            onClick={(e) => {
+              e.preventDefault();
+              navigate("/pricing");
+            }}
+          />
         </section>
       </main>
 
@@ -36,7 +37,7 @@ export default function Homepage() {
             gap: "2rem",
           }}
         >
-          <img src="/LabRailRenser.jpg" style={{ maxHeight: "250px" }} />
+          <img src="/LabRailRenser.jpg" className={styles.labrail} />
           The unique LabRail® system together with a LabSpion goniometer is a
           complete light measurement solution. The 2-axis goniometer enables the
           system to measure the full 3D light distribution of any light source
