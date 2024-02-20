@@ -53,12 +53,12 @@
   flex-direction: column;
   /* align-items: center; */
   gap: 1rem;
-  
+
   a {
-    color: #ffb643;
+    color: var(--primary-color);
   }
   a:hover {
-    color: rgb(0, 197, 106);
+    color: #ffb643;
   }
 }
 

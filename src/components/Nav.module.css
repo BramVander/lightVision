@@ -8,6 +8,8 @@
   .logo {
     width: 3rem;
     height: 3rem;
+    background: white;
+    border-radius: 25px;
   }
 
   ul {

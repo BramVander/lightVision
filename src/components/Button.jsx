@@ -1,10 +1,10 @@
 function Button({
   text = "btnText",
-  bg = "#00c56a",
-  color = "#242424",
+  bg = "#0055FF",
+  color = "white",
   borderBottomLeftRadius = "5px",
   borderBottomRightRadius = "5px",
-  onClick
+  onClick,
 }) {
   return (
     <button

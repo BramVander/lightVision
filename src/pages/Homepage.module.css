@@ -53,7 +53,7 @@ section.form {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    border-bottom: 5px solid #00c56a;
+    border-bottom: 5px solid #0055ff;
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0), 0 17px 17px 0 rgba(0, 0, 0);
     transform: scale(0.9);
   }

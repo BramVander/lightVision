@@ -14,15 +14,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #0055ff;
 }
 
 a {
   font-weight: 500;
-  color: #ffb643;
+  color: var(--primary-color);
   text-decoration: inherit;
 }
 
 a:hover,
 .active {
-  color: #00c56a;
+  color: white;
 }

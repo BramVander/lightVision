@@ -10,18 +10,11 @@ function Nav() {
   return (
     <nav className={styles.nav}>
       <a href="/">
-        <img
-          className={styles.logo}
-          src="/lightvision.png"
-          alt="Light Vision Logo"
-        />
-        Light Vision
+        <img className={styles.logo} src="/lightvi.png" alt="Light Vi Logo" />
+        Light Vi
       </a>
 
       <ul>
-        {/* <li>
-          <NavLink to="/">Home</NavLink>
-        </li> */}
         <li>
           <NavLink to="/pricing">Pricing</NavLink>
         </li>
@@ -29,11 +22,12 @@ function Nav() {
           <NavLink to="/contact">Contact</NavLink>
         </li>
         <Button
-        text={"book"}
-        onClick={(e) => {
-          e.preventDefault();
-          navigate("/pricing");
-        }} />
+          text={"book"}
+          onClick={(e) => {
+            e.preventDefault();
+            navigate("/pricing");
+          }}
+        />
       </ul>
     </nav>
   );
