@@ -9,6 +9,7 @@ function Form() {
   const [message, setMessage] = useState("");
 
   function handleSubmit(e) {
+    console.log(e);
     e.preventDefault();
     setMessage("Quote requested!");
   }

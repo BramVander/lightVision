@@ -28,3 +28,7 @@ a:hover,
 .active {
   color: white;
 }
+
+input[type="checkbox"] {
+  accent-color: var(--primary-color);
+}

@@ -3,3 +3,11 @@
   display: flex;
   justify-content: center;
 }
+
+.list li {
+  list-style-type: none;
+}
+
+li .icon {
+  color: tomato;
+}

@@ -50,7 +50,7 @@ function ContactForm() {
         <textarea
           required
           id="notes"
-          placeholder="I want to measure {UGR, Lux, color...}"
+          placeholder="I want to measure {...products}"
         />
 
         <div>

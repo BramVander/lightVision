@@ -28,18 +28,8 @@ section.product {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /* background: linear-gradient(
-      to right, 
-      rgb(36, 36, 36),
-      rgb(36, 36, 36) 65%, 
-      #313131 50%); 
-    ) */
-  background: linear-gradient(
-    to right,
-    rgb(36, 36, 36),
-    rgb(36, 36, 36) 50%,
-    #414141 70%
-  );
+  background: linear-gradient(to right, rgb(36, 36, 36) 65%, #313131 50%);
+  /* background: linear-gradient(to right, rgb(36, 36, 36) 50%, #414141 70%); */
 
   .labrail {
     max-height: 250px;

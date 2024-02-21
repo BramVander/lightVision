@@ -23,6 +23,7 @@ section.contact {
 
     label {
       color: white;
+      margin: 0.5rem;
     }
 
     input {
@@ -41,5 +42,5 @@ section.contact {
 }
 
 section.map {
-  margin-block: 10rem;
+  margin-block-start: 10rem;
 }

@@ -1,7 +1,5 @@
 function Button({
   text = "btnText",
-  bg = "#0055FF",
-  color = "white",
   borderBottomLeftRadius = "5px",
   borderBottomRightRadius = "5px",
   onClick,
@@ -10,10 +8,10 @@ function Button({
     <button
       onClick={onClick}
       style={{
-        color: color,
-        backgroundColor: bg,
+        color: "white",
+        backgroundColor: "#0055FF",
         padding: "10px",
-        border: bg,
+        border: "#0055FF",
         borderRadius: "5px",
         borderBottomLeftRadius: borderBottomLeftRadius,
         borderBottomRightRadius: borderBottomRightRadius,
