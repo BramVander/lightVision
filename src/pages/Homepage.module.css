@@ -4,7 +4,7 @@
       rgba(36, 42, 46, 0.8),
       rgba(36, 42, 46, 0.8)
     ),
-    url("/home-hero.png");
+    url("/public/home-hero.png");
   background-size: 65%;
   background-position: bottom;
 
@@ -31,16 +31,38 @@ section.product {
   background: linear-gradient(to right, rgb(36, 36, 36) 65%, #313131 50%);
   /* background: linear-gradient(to right, rgb(36, 36, 36) 50%, #414141 70%); */
 
+  .paragraph {
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
   .labrail {
     max-height: 250px;
     opacity: 0.8;
   }
 }
 
+@media screen and (max-width: 1440px) {
+  section.product {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(36, 36, 36);
+
+    .labrail {
+      display: none;
+    }
+  }
+}
+
 section.form {
   display: flex;
   justify-content: center;
-  background-color: #242424;
+  /* background-color: #393838; */
+  background-color: #1e2226;
   padding: 2rem 1rem;
 
   form {

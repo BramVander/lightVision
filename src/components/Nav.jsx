@@ -11,7 +11,7 @@ function Nav() {
     <nav className={styles.nav}>
       <a href="/">
         <img className={styles.logo} src="/lightvi.png" alt="Light Vi Logo" />
-        Light Vi
+        <p >LightVi</p>
       </a>
 
       <ul>

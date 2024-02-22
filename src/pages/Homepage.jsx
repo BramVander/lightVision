@@ -30,15 +30,7 @@ export default function Homepage() {
         </div>
 
         <section className={styles.product}>
-          <p
-            style={{
-              maxWidth: "40%",
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "row",
-              gap: "2rem",
-            }}
-          >
+          <p className={styles.paragraph}>
             <img src="/LabRailRenser.jpg" className={styles.labrail} />
             The unique LabRail® system together with a LabSpion goniometer is a
             complete light measurement solution. The 2-axis goniometer enables

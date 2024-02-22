@@ -8,9 +8,11 @@ import styles from "./Contact.module.css";
 function Contact() {
   return (
     <>
-      <Nav />
-
       <main>
+        <div className={styles.contactheader}>
+          <Nav />
+        </div>
+
         <section className={styles.contact}>
           <div className={styles.text}>
             <h2>Hello</h2>

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <p className={styles.copy}>
-        Copyright @ <a href="/">Light Vi</a>
+        Copyright @ <a href="/">LightVi</a>
       </p>
     </footer>
   );

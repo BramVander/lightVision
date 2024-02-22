@@ -15,7 +15,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary-color: #0055ff;
+  --primary-color: #0758fc;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--primary-color);
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: #07a2fc;
 }
 
 a {
@@ -24,11 +33,15 @@ a {
   text-decoration: inherit;
 }
 
+nav a {
+  /* for contrast we pick lighter blue */
+  color: #07a2fc;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 a:hover,
 .active {
   color: white;
-}
-
-input[type="checkbox"] {
-  accent-color: var(--primary-color);
 }
